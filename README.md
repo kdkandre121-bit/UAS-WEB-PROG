@@ -1,59 +1,82 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# ARTNOVA - Galeri Seni Futuristik
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**ARTNOVA** adalah sistem manajemen galeri seni digital modern yang dibangun menggunakan kerangka kerja **Laravel**. Platform ini menyajikan antarmuka publik yang memukau dengan sentuhan estetika neon futuristik, serta dilengkapi panel admin yang aman dan handal untuk pengelolaan aset seni secara efisien.
 
-## About Laravel
+![Pratinjau Proyek](https://placehold.co/800x400/050505/00ffff?text=Pratinjau+ARTNOVA)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Fitur Utama
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 🌌 Galeri Publik
+- **Desain Futuristik**: Mengusung konsep mode gelap (*dark mode*) dengan efek pendar neon dan elemen *glassmorphism* yang elegan.
+- **Konten Dinamis**: Menampilkan koleksi karya seni yang diambil langsung dari basis data secara *real-time*.
+- **Tata Letak Responsif**: Tampilan grid yang fleksibel dan optimal untuk berbagai ukuran layar perangkat.
+- **Antarmuka Interaktif**: Pengalaman pengguna yang hidup dengan animasi dan transisi halus.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 🛡️ Panel Admin
+- **Otentikasi Aman**: Sistem login khusus untuk administrator dengan lapisan keamanan terpisah.
+- **Dasbor Terpadu**: Tampilan pusat kendali untuk memantau seluruh aset seni dengan antarmuka yang bersih.
+- **Manajemen Data (CRUD)**: Kendali penuh untuk membuat, melihat, memperbarui, dan menghapus data poster seni.
+- **Dukungan Tautan Gambar**: Kemudahan pengelolaan visual cukup dengan menggunakan tautan (URL) gambar eksternal, sehingga tidak membebani penyimpanan lokal.
 
-## Learning Laravel
+## 🛠️ Teknologi yang Digunakan
+- **Framework**: Laravel 11
+- **Basis Data**: MySQL
+- **Pewarnaan & Gaya**: Tailwind CSS (CDN) dengan Kustomisasi CSS
+- **Tipografi**: Huruf 'Outfit' dari Google Fonts
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## ⚙️ Panduan Instalasi
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal Anda:
 
-## Laravel Sponsors
+1.  **Salin Repositori**
+    ```bash
+    git clone https://github.com/username-anda/nama-proyek-art.git
+    cd nama-proyek-art
+    ```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+2.  **Instalasi Dependensi**
+    Pasang semua pustaka yang dibutuhkan menggunakan Composer:
+    ```bash
+    composer install
+    ```
 
-### Premium Partners
+3.  **Konfigurasi Lingkungan**
+    Duplikasi berkas contoh konfigurasi dan sesuaikan pengaturan basis data Anda:
+    ```bash
+    cp .env.example .env
+    ```
+    *Pastikan untuk menyesuaikan `DB_DATABASE`, `DB_USERNAME`, dan `DB_PASSWORD` di dalam berkas `.env` sesuai dengan konfigurasi lokal Anda.*
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+4.  **Buat Kunci Aplikasi**
+    ```bash
+    php artisan key:generate
+    ```
 
-## Contributing
+5.  **Migrasi & Pengisian Data Awal**
+    Siapkan tabel basis data dan isi dengan data contoh:
+    ```bash
+    php artisan migrate --seed
+    ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+6.  **Jalankan Server**
+    Aktifkan server pengembangan lokal:
+    ```bash
+    php artisan serve
+    ```
+    Akses aplikasi melalui peramban di alamat `http://127.0.0.1:8000`.
 
-## Code of Conduct
+## 🔑 Informasi Akses
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Panel Admin
+Gunakan kredensial berikut untuk masuk ke halaman pengelolaan:
+- **URL**: [http://127.0.0.1:8000/admin/login](http://127.0.0.1:8000/admin/login)
+- **Email**: `admin@example.com`
+- **Kata Sandi**: `password`
 
-## Security Vulnerabilities
+## 📂 Struktur Direktori Utama
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- `app/Models/Poster`: Model data untuk aset karya seni.
+- `app/Models/Admin`: Model data untuk pengguna administrator.
+- `app/Http/Controllers/Admin`: Logika pengendali untuk fitur-fitur panel admin.
+- `resources/views/poster.blade.php`: Tampilan muka untuk galeri publik.
+- `resources/views/admin`: Kumpulan tampilan untuk dasbor dan manajemen admin.
