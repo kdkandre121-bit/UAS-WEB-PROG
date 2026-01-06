@@ -2,8 +2,6 @@
 
 **ARTNOVA** adalah sistem manajemen galeri seni digital modern yang dibangun menggunakan kerangka kerja **Laravel**. Platform ini menyajikan antarmuka publik yang memukau dengan sentuhan estetika neon futuristik, serta dilengkapi panel admin yang aman dan handal untuk pengelolaan aset seni secara efisien.
 
-![Pratinjau Proyek](https://placehold.co/800x400/050505/00ffff?text=Pratinjau+ARTNOVA)
-
 ## 🚀 Fitur Utama
 
 ### 🌌 Galeri Publik
